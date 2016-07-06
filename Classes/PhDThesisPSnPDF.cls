@@ -727,8 +727,8 @@ supported!}
 \ifpdf
 \AtBeginDocument{
   \hypersetup{
-    pdftitle = {\@title},
-    pdfauthor = {\@author},
+    pdftitle = {\@Titre},
+    pdfauthor = {\@Auteur},
     pdfsubject={\@subject},
     pdfkeywords={\@keywords}
   }
@@ -1270,3 +1270,5 @@ wish to left align your text}
 }
 }
 
+%Grenoble front-matter
+\RequirePackage[a4paper]{Classes/meta-donnees}

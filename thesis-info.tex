@@ -1,72 +1,52 @@
-% ************************ Thesis Information & Meta-data **********************
-%% The title of the thesis
-\title{Writing your PhD thesis in \texorpdfstring{\\ \LaTeX2e}{LaTeX2e}}
-%\texorpdfstring is used for PDF metadata. Usage:
-%\texorpdfstring{LaTeX_Version}{PDF Version (non-latex)} eg.,
-%\texorpdfstring{$sigma$}{sigma}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%             Commandes Meta-données               %%
+%%   à renseigner par les auteurs pour générer      %%
+%%     la couverture modèle Univ. Grenoble          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Subtitle (Optional)
-\subtitle{Using the CUED template}
-
-%% The full name of the author
-\author{Krishna Kumar}
-
-%% Department (eg. Department of Engineering, Maths, Physics)
-\dept{Department of Engineering}
-
-%% University and Crest
-\university{University of Cambridge}
-% Crest minimum should be 30mm.
-\crest{\includegraphics[width=0.2\textwidth]{University_Crest}}
-%% Use this crest, if you are using the college crest
-%% Crest long miminum should be 65mm
-%\crest{\includegraphics[width=0.45\textwidth]{University_Crest_Long}}
-
-%% College shield [optional] 
-% Crest minimum should be 30mm.
-%\collegeshield{\includegraphics[width=0.2\textwidth]{CollegeShields/Kings}}
+%\Sethpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture horizontalement (valeur par défaut est -5.5mm)
+%\Setvpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture verticalement (valeur par défaut est -15.5mm)
 
 
-%% Supervisor (optional)
-%% for multiple supervisors, append each supervisor with the \newline command
-%\supervisor{\textbf{Prof. A.B. Supervisor\newline
-%Prof. C.D. Supervisor\newline
-%Prof. E.F. Supervisor\newline
-%Prof. G.H. Supervisor}}
-
-%% Supervisor Role (optional) - Supervisor (default) or advisor
-% \supervisorrole{\textbf{Supervisors: }}
-%% if no title is desired:
-% \supervisorrole{}
-
-%% Advisor (optional)
-%% for multiple advisors, append each advisor with the \newline command
-%\advisor{Advisor 1\newline
-%Advisors 2\newline
-%Advisor 3\newline
-%Advisor 4}
-     
-%% Advisor Role (optional) - Advisor (default) or leave empty
-% \advisorrole{Advisors: }
-%% if no title is required
-% \advisorrole{}
+%\Universite{}    %%optionnel : à décommenter et à renseigenr si vous voulez changer le non d'université
+%\Grade{}         %%optionnel : à décommenter et à renseigenr si vous voulez changer le grade
+\Specialite{Specialite A}
+\Arrete{7 Ao\^ut 2006}
+\Auteur{NOM Prenome}
+\Directeur{NOM Directeur}
+%\CoDirecteur{}    %%optionnel : à décommenter et à renseigenr si présence d'un Co-directeur de thèse
+\Laboratoire{Laboratoire XYZ}
+\EcoleDoctorale{EcoleDoctorale XYZ}
+\Titre{Titre de la these}
+%\Soustitre{}      %%optionnel : à décommenter et à renseigenr si présence d'un sous-titre de thèse
+\Depot{}       
 
 
-%% You can redefine the submission text:
-% Default as per the University guidelines:
-% ``This dissertation is submitted for the degree of''
-%\renewcommand{\submissiontext}{change the default text here if needed}
+% Commande pour création de nouvelles catégories dans le jury:
 
-%% Full title of the Degree
-\degreetitle{Doctor of Philosophy}
+%\UGTNewJuryCategory{...NomDeLaCategorie...}{...Definition...}
 
-%% College affiliation (optional)
-\college{King's College}
+% Exemple \UGTNewJuryCategory{UGTFamille}{Membre de la famille} que nous ajoutons dans la commande \Jury ci-dessous sous la forme \UGTFamille{Jean Rousseau}{(...titre_et_affiliation...s'il_y_en_a...)}
 
-%% Submission date
-% Default is set as {\monthname[\the\month]\space\the\year}
-%\degreedate{September 2014} 
+
+\Jury{
+\UGTPresident{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}
+\UGTPresidente{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}
+
+\UGTRapporteur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}      %% 1er rapporteur
+\UGTRapporteur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}      %% second rapporteur
+ 
+\UGTExaminateur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}     %% 1er examinateur
+\UGTExaminateur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}     %% second examinateur
+\UGTExaminatrice{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}    %% 3ème examinateur
+
+\UGTDirecteur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}       %% Directeur de thèse
+\UGTCoDirecteur{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}     %% Co-Directeur de thèse s'il y en a
+
+\UGTInvite{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}
+\UGTInvitee{...Civilité, Prénom-et-Nom...}{...titre-et-affiliation...}
+}
 
 %% Meta information
-\subject{LaTeX} \keywords{{LaTeX} {PhD Thesis} {Engineering} {University of
+\subject{thesis subject} \keywords{{LaTeX} {PhD Thesis} {Engineering} {University of
 Cambridge}}
